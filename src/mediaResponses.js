@@ -26,7 +26,7 @@ const getMedia = (filename, request, response) => {
     }
 
     const chunkSize = (end - start) + 1;
-    const contentType = response.writeHead(206, {
+    response.writeHead(206, {
       'Content-Range': `bytes ${start}-${end}/${total}`,
       'Accept-Ranges': 'bytes',
       'Content-Length': chunkSize,

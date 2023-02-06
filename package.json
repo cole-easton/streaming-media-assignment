@@ -22,5 +22,8 @@
     "eslint": "^8.33.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.5"
+  },
+  "dependencies": {
+    "mime-types": "^2.1.35"
   }
 }
